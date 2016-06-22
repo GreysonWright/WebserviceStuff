@@ -10,7 +10,7 @@ import UIKit
 
 class BinderWebService: DataInterface {
 	var binderWebServiceBaseAddress : String = "https://mobileweb.caps.ua.edu/BeePositive"
-	var accessToken: String? = nil
+	var accessToken: String? = "38e6f015-66fa-4965-a078-03a1be41e978"
 	
 	// MARK: Singleton Access
 	static let sharedInstance = BinderWebService()
@@ -18,36 +18,42 @@ class BinderWebService: DataInterface {
 	// Headers
 	func binderHeaders() -> [String:String] {
 		if accessToken == nil {
-			return ["Token" : ""]
+			return ["AccessToken" : ""]
 		}
 		
-		return ["Token" : accessToken!]
+		return ["AccessToken" : accessToken!]
 	}
 	
 	// MARK: Binder Webservice Methods
-	func submitHiveWords(with data: Data, response: (Data?) -> Void) {
-		let address = "\(binderWebServiceBaseAddress)/api/Submit/HiveWords"
+	func getHiveWords(response: (Test?) -> Void) {
+		let address = "\(binderWebServiceBaseAddress)/api/Request/HiveWords"
 		
 		//Make Request
-		let headers = ["AccessToken" : "38e6f015-66fa-4965-a078-03a1be41e978"]
-		URLSession.request(with: address, httpMethod: .post, headers: headers, requestBody: data, response: { (responseData: Data?, statusCode: StatusCode) in
-			if responseData != nil {
-				response(responseData)
+		URLSession.shared().request(with: address, httpMethod: .get, headers: binderHeaders(), requestBody: nil, response: { (responseData: Data?, statusCode: StatusCode) in
+			guard let responseData = responseData else {
+				response(nil)
+				return
 			}
+			
+			let object = responseData.fromJSON(to: Test().self)
+			response(object)
 		}) { (error: NSError) in
 			print(error)
 		}
 	}
 	
-	func getHiveWords(response: (Data?) -> Void) {
-		let address = "\(binderWebServiceBaseAddress)/api/Request/HiveWords"
+	func getArrests(response: ([OtherTest]?) -> Void) {
+		let address = "https://mobileweb.caps.ua.edu/TCSOPublic/api/Arrests/getRecentArrests"
 		
 		//Make Request
-		let headers = ["AccessToken" : "38e6f015-66fa-4965-a078-03a1be41e978"]
-		URLSession.request(with: address, httpMethod: .get, headers: headers, requestBody: nil, response: { (responseData: Data?, statusCode: StatusCode) in
-			if responseData != nil {
-				response(responseData)
+		URLSession.shared().request(with: address, httpMethod: .get, headers: binderHeaders(), requestBody: nil, response: { (responseData: Data?, statusCode: StatusCode) in
+			guard let responseData = responseData else {
+				response(nil)
+				return
 			}
+			
+			let object = responseData.fromJSON(to: [OtherTest().self])
+			response(object)
 		}) { (error: NSError) in
 			print(error)
 		}

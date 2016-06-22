@@ -61,12 +61,12 @@ enum HTTPMethod: String {
 }
 
 extension URLSession {
-	class func buildError(with statusCode: StatusCode) -> NSError {
+	func buildError(with statusCode: StatusCode) -> NSError {
 		let error = NSError(domain: "\(statusCode)", code: statusCode.rawValue, userInfo: nil)
 		return error
 	}
 	
-	class func request(with url: String, httpMethod: HTTPMethod, headers: [String : String]?, requestBody: Data?, response: (Data?, StatusCode) -> Swift.Void, error: (NSError) -> Swift.Void) {
+	func request(with url: String, httpMethod: HTTPMethod, headers: [String : String]?, requestBody: Data?, response: (Data?, StatusCode) -> Swift.Void, error: (NSError) -> Swift.Void) {
 		var urlRequest = URLRequest(url: URL(string:url)!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10.0)
 		urlRequest.httpMethod = httpMethod.rawValue
 		if requestBody != nil {
@@ -79,10 +79,10 @@ extension URLSession {
 			}
 		}
 		
-		let task = shared().dataTask(with: urlRequest) { (data: Data?, urlResponse: URLResponse?, requestError: NSError?) in
+		let task = dataTask(with: urlRequest) { (data: Data?, urlResponse: URLResponse?, requestError: NSError?) in
 			guard let httpResponse = urlResponse as? HTTPURLResponse else {
 				guard let requestError = requestError else {
-					let noStatusCodeError = buildError(with: .none)
+					let noStatusCodeError = self.buildError(with: .none)
 					error(noStatusCodeError)
 					return
 				}
@@ -94,7 +94,7 @@ extension URLSession {
 			if statusCode.rawValue >= 100 && statusCode.rawValue < 300 {
 				response(data, statusCode)
 			} else {
-				let responseError = buildError(with: statusCode)
+				let responseError = self.buildError(with: statusCode)
 				error(responseError)
 			}
 		}

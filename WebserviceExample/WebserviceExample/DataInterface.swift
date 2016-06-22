@@ -31,6 +31,6 @@ import Foundation
 
 // MARK: Protocol
 protocol DataInterface{
-	func submitHiveWords(with data: Data, response: (Data?) -> Swift.Void)
-	func getHiveWords(response: (Data?) -> Swift.Void)
+	func getHiveWords(response: (Test?) -> Swift.Void)
+	func getArrests(response: ([OtherTest]?) -> Swift.Void)
 }

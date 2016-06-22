@@ -39,7 +39,7 @@ enum DataSources {
 //MARK: Class
 class DataSingleton {
     // Singleton
-    static let sharedInstance = DataSingleton()
+    static let shared = DataSingleton()
     
     //Variables
     private var dataSourceType: DataSources = .webService
@@ -66,11 +66,11 @@ class DataSingleton {
         dataSource = dataSourceForType(source)
     }
 	
-	func submitHiveWords(with data: Data, response: (Data?) -> Swift.Void) {
-		return dataSource!.submitHiveWords(with: data, response: response)
+	func getHiveWords(response: (Test?) -> Swift.Void) {
+		return dataSource!.getHiveWords(response: response)
 	}
 	
-	func getHiveWords(response: (Data?) -> Swift.Void) {
-		return dataSource!.getHiveWords(response: response)
+	func getArrests(response: ([OtherTest]?) -> Swift.Void) {
+		return dataSource!.getArrests(response: response)
 	}
 }

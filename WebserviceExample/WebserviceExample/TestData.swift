@@ -41,11 +41,11 @@ class TestData: NSObject, DataInterface {
         super.init()
     }
 	
-	func submitHiveWords(with data: Data, response: (Data?) -> Void) {
+	func getHiveWords(response: (Test?) -> Void) {
 		
 	}
 	
-	func getHiveWords(response: (Data?) -> Void) {
+	func getArrests(response: ([OtherTest]?) -> Void) {
 		
 	}
 }

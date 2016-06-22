@@ -22,7 +22,6 @@
 		2EB167C91D1AE10500152E08 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B71D1AE10500152E08 /* Mapper.swift */; };
 		2EB167CA1D1AE10500152E08 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B81D1AE10500152E08 /* Operators.swift */; };
 		2EB167CB1D1AE10500152E08 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B91D1AE10500152E08 /* ToJSON.swift */; };
-		2EB167CC1D1AE10500152E08 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB167BA1D1AE10500152E08 /* Info.plist */; };
 		2EB167CD1D1AE10500152E08 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167BD1D1AE10500152E08 /* CustomDateFormatTransform.swift */; };
 		2EB167CE1D1AE10500152E08 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167BE1D1AE10500152E08 /* DateFormatterTransform.swift */; };
 		2EB167CF1D1AE10500152E08 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167BF1D1AE10500152E08 /* DateTransform.swift */; };
@@ -33,6 +32,7 @@
 		2EB167D41D1AE10500152E08 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167C41D1AE10500152E08 /* TransformType.swift */; };
 		2EB167D51D1AE10500152E08 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167C51D1AE10500152E08 /* URLTransform.swift */; };
 		2EB167D71D1AEB0C00152E08 /* Data+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167D61D1AEB0C00152E08 /* Data+ObjectMapper.swift */; };
+		2EB167DD1D1B1ED100152E08 /* OtherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167DC1D1B1ED100152E08 /* OtherTest.swift */; };
 		2EFD30B41D19CCD800B22200 /* BinderWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD30B31D19CCD800B22200 /* BinderWebService.swift */; };
 		2EFD30B91D19CD3A00B22200 /* DataInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD30B61D19CD3A00B22200 /* DataInterface.swift */; };
 		2EFD30BA1D19CD3A00B22200 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD30B71D19CD3A00B22200 /* DataSingleton.swift */; };
@@ -78,7 +78,6 @@
 		2EB167B71D1AE10500152E08 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		2EB167B81D1AE10500152E08 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		2EB167B91D1AE10500152E08 /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
-		2EB167BA1D1AE10500152E08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EB167BB1D1AE10500152E08 /* ObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectMapper.h; sourceTree = "<group>"; };
 		2EB167BD1D1AE10500152E08 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
 		2EB167BE1D1AE10500152E08 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
@@ -89,7 +88,8 @@
 		2EB167C31D1AE10500152E08 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
 		2EB167C41D1AE10500152E08 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
 		2EB167C51D1AE10500152E08 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
-		2EB167D61D1AEB0C00152E08 /* Data+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+ObjectMapper.swift"; path = "ObjectMapper/Data+ObjectMapper.swift"; sourceTree = "<group>"; };
+		2EB167D61D1AEB0C00152E08 /* Data+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+ObjectMapper.swift"; sourceTree = "<group>"; };
+		2EB167DC1D1B1ED100152E08 /* OtherTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherTest.swift; sourceTree = "<group>"; };
 		2EFD30B31D19CCD800B22200 /* BinderWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinderWebService.swift; sourceTree = "<group>"; };
 		2EFD30B61D19CD3A00B22200 /* DataInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInterface.swift; sourceTree = "<group>"; };
 		2EFD30B71D19CD3A00B22200 /* DataSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
@@ -146,10 +146,8 @@
 			children = (
 				2E6C9E691D18516400E251D4 /* AppDelegate.swift */,
 				2EB1678E1D1AD3C500152E08 /* Test.swift */,
-				2EB167B21D1AE10500152E08 /* ObjectMapper */,
+				2EB167DC1D1B1ED100152E08 /* OtherTest.swift */,
 				2EFD30B51D19CCE400B22200 /* Binder */,
-				2EB167D61D1AEB0C00152E08 /* Data+ObjectMapper.swift */,
-				2E6C9E9A1D1853D900E251D4 /* URLSession+Request.swift */,
 				2E6C9E6B1D18516400E251D4 /* ViewController.swift */,
 				2E6C9E6D1D18516400E251D4 /* Main.storyboard */,
 				2E6C9E701D18516400E251D4 /* Assets.xcassets */,
@@ -180,9 +178,9 @@
 		2EB167B21D1AE10500152E08 /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				2EB167B31D1AE10500152E08 /* Core */,
-				2EB167BA1D1AE10500152E08 /* Info.plist */,
+				2EB167D61D1AEB0C00152E08 /* Data+ObjectMapper.swift */,
 				2EB167BB1D1AE10500152E08 /* ObjectMapper.h */,
+				2EB167B31D1AE10500152E08 /* Core */,
 				2EB167BC1D1AE10500152E08 /* Transforms */,
 			);
 			path = ObjectMapper;
@@ -217,9 +215,27 @@
 			path = Transforms;
 			sourceTree = "<group>";
 		};
+		2EB167DA1D1B1B4000152E08 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2EB167DB1D1B1B5E00152E08 /* Session */,
+				2EB167B21D1AE10500152E08 /* ObjectMapper */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		2EB167DB1D1B1B5E00152E08 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				2E6C9E9A1D1853D900E251D4 /* URLSession+Request.swift */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
 		2EFD30B51D19CCE400B22200 /* Binder */ = {
 			isa = PBXGroup;
 			children = (
+				2EB167DA1D1B1B4000152E08 /* Libraries */,
 				2EFD30B31D19CCD800B22200 /* BinderWebService.swift */,
 				2EFD30B61D19CD3A00B22200 /* DataInterface.swift */,
 				2EFD30B71D19CD3A00B22200 /* DataSingleton.swift */,
@@ -344,7 +360,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EB167CC1D1AE10500152E08 /* Info.plist in Resources */,
 				2E6C9E741D18516400E251D4 /* LaunchScreen.storyboard in Resources */,
 				2E6C9E711D18516400E251D4 /* Assets.xcassets in Resources */,
 				2E6C9E6F1D18516400E251D4 /* Main.storyboard in Resources */,
@@ -376,6 +391,7 @@
 				2EB167CF1D1AE10500152E08 /* DateTransform.swift in Sources */,
 				2EB167D11D1AE10500152E08 /* ISO8601DateTransform.swift in Sources */,
 				2EB167C71D1AE10500152E08 /* Map.swift in Sources */,
+				2EB167DD1D1B1ED100152E08 /* OtherTest.swift in Sources */,
 				2EFD30B41D19CCD800B22200 /* BinderWebService.swift in Sources */,
 				2E6C9E6C1D18516400E251D4 /* ViewController.swift in Sources */,
 				2EB167C61D1AE10500152E08 /* FromJSON.swift in Sources */,
