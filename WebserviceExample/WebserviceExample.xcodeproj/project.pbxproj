@@ -15,11 +15,28 @@
 		2E6C9E7F1D18516400E251D4 /* WebserviceExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C9E7E1D18516400E251D4 /* WebserviceExampleTests.swift */; };
 		2E6C9E8A1D18516400E251D4 /* WebserviceExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C9E891D18516400E251D4 /* WebserviceExampleUITests.swift */; };
 		2E6C9E9B1D1853D900E251D4 /* URLSession+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C9E9A1D1853D900E251D4 /* URLSession+Request.swift */; };
+		2EB1678F1D1AD3C500152E08 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1678E1D1AD3C500152E08 /* Test.swift */; };
+		2EB167C61D1AE10500152E08 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B41D1AE10500152E08 /* FromJSON.swift */; };
+		2EB167C71D1AE10500152E08 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B51D1AE10500152E08 /* Map.swift */; };
+		2EB167C81D1AE10500152E08 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B61D1AE10500152E08 /* Mappable.swift */; };
+		2EB167C91D1AE10500152E08 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B71D1AE10500152E08 /* Mapper.swift */; };
+		2EB167CA1D1AE10500152E08 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B81D1AE10500152E08 /* Operators.swift */; };
+		2EB167CB1D1AE10500152E08 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167B91D1AE10500152E08 /* ToJSON.swift */; };
+		2EB167CC1D1AE10500152E08 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB167BA1D1AE10500152E08 /* Info.plist */; };
+		2EB167CD1D1AE10500152E08 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167BD1D1AE10500152E08 /* CustomDateFormatTransform.swift */; };
+		2EB167CE1D1AE10500152E08 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167BE1D1AE10500152E08 /* DateFormatterTransform.swift */; };
+		2EB167CF1D1AE10500152E08 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167BF1D1AE10500152E08 /* DateTransform.swift */; };
+		2EB167D01D1AE10500152E08 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167C01D1AE10500152E08 /* EnumTransform.swift */; };
+		2EB167D11D1AE10500152E08 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167C11D1AE10500152E08 /* ISO8601DateTransform.swift */; };
+		2EB167D21D1AE10500152E08 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167C21D1AE10500152E08 /* NSDecimalNumberTransform.swift */; };
+		2EB167D31D1AE10500152E08 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167C31D1AE10500152E08 /* TransformOf.swift */; };
+		2EB167D41D1AE10500152E08 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167C41D1AE10500152E08 /* TransformType.swift */; };
+		2EB167D51D1AE10500152E08 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167C51D1AE10500152E08 /* URLTransform.swift */; };
+		2EB167D71D1AEB0C00152E08 /* Data+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB167D61D1AEB0C00152E08 /* Data+ObjectMapper.swift */; };
 		2EFD30B41D19CCD800B22200 /* BinderWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD30B31D19CCD800B22200 /* BinderWebService.swift */; };
 		2EFD30B91D19CD3A00B22200 /* DataInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD30B61D19CD3A00B22200 /* DataInterface.swift */; };
 		2EFD30BA1D19CD3A00B22200 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD30B71D19CD3A00B22200 /* DataSingleton.swift */; };
 		2EFD30BB1D19CD3A00B22200 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD30B81D19CD3A00B22200 /* TestData.swift */; };
-		2EFD30BD1D19D99C00B22200 /* ObjectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFD30BC1D19D99C00B22200 /* ObjectMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +71,29 @@
 		2E6C9E891D18516400E251D4 /* WebserviceExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceExampleUITests.swift; sourceTree = "<group>"; };
 		2E6C9E8B1D18516400E251D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6C9E9A1D1853D900E251D4 /* URLSession+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URLSession+Request.swift"; path = "../../Webservice/URLSession+Request.swift"; sourceTree = "<group>"; };
+		2EB1678E1D1AD3C500152E08 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		2EB167B41D1AE10500152E08 /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
+		2EB167B51D1AE10500152E08 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		2EB167B61D1AE10500152E08 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		2EB167B71D1AE10500152E08 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		2EB167B81D1AE10500152E08 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		2EB167B91D1AE10500152E08 /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
+		2EB167BA1D1AE10500152E08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EB167BB1D1AE10500152E08 /* ObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectMapper.h; sourceTree = "<group>"; };
+		2EB167BD1D1AE10500152E08 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		2EB167BE1D1AE10500152E08 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
+		2EB167BF1D1AE10500152E08 /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
+		2EB167C01D1AE10500152E08 /* EnumTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
+		2EB167C11D1AE10500152E08 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		2EB167C21D1AE10500152E08 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		2EB167C31D1AE10500152E08 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
+		2EB167C41D1AE10500152E08 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
+		2EB167C51D1AE10500152E08 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		2EB167D61D1AEB0C00152E08 /* Data+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+ObjectMapper.swift"; path = "ObjectMapper/Data+ObjectMapper.swift"; sourceTree = "<group>"; };
 		2EFD30B31D19CCD800B22200 /* BinderWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinderWebService.swift; sourceTree = "<group>"; };
 		2EFD30B61D19CD3A00B22200 /* DataInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInterface.swift; sourceTree = "<group>"; };
 		2EFD30B71D19CD3A00B22200 /* DataSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
 		2EFD30B81D19CD3A00B22200 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
-		2EFD30BC1D19D99C00B22200 /* ObjectMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +145,11 @@
 			isa = PBXGroup;
 			children = (
 				2E6C9E691D18516400E251D4 /* AppDelegate.swift */,
-				2EFD30BC1D19D99C00B22200 /* ObjectMap.swift */,
+				2EB1678E1D1AD3C500152E08 /* Test.swift */,
+				2EB167B21D1AE10500152E08 /* ObjectMapper */,
 				2EFD30B51D19CCE400B22200 /* Binder */,
-				2E6C9E991D18523900E251D4 /* Request */,
+				2EB167D61D1AEB0C00152E08 /* Data+ObjectMapper.swift */,
+				2E6C9E9A1D1853D900E251D4 /* URLSession+Request.swift */,
 				2E6C9E6B1D18516400E251D4 /* ViewController.swift */,
 				2E6C9E6D1D18516400E251D4 /* Main.storyboard */,
 				2E6C9E701D18516400E251D4 /* Assets.xcassets */,
@@ -140,12 +177,44 @@
 			path = WebserviceExampleUITests;
 			sourceTree = "<group>";
 		};
-		2E6C9E991D18523900E251D4 /* Request */ = {
+		2EB167B21D1AE10500152E08 /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				2E6C9E9A1D1853D900E251D4 /* URLSession+Request.swift */,
+				2EB167B31D1AE10500152E08 /* Core */,
+				2EB167BA1D1AE10500152E08 /* Info.plist */,
+				2EB167BB1D1AE10500152E08 /* ObjectMapper.h */,
+				2EB167BC1D1AE10500152E08 /* Transforms */,
 			);
-			name = Request;
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		2EB167B31D1AE10500152E08 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2EB167B41D1AE10500152E08 /* FromJSON.swift */,
+				2EB167B51D1AE10500152E08 /* Map.swift */,
+				2EB167B61D1AE10500152E08 /* Mappable.swift */,
+				2EB167B71D1AE10500152E08 /* Mapper.swift */,
+				2EB167B81D1AE10500152E08 /* Operators.swift */,
+				2EB167B91D1AE10500152E08 /* ToJSON.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2EB167BC1D1AE10500152E08 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				2EB167BD1D1AE10500152E08 /* CustomDateFormatTransform.swift */,
+				2EB167BE1D1AE10500152E08 /* DateFormatterTransform.swift */,
+				2EB167BF1D1AE10500152E08 /* DateTransform.swift */,
+				2EB167C01D1AE10500152E08 /* EnumTransform.swift */,
+				2EB167C11D1AE10500152E08 /* ISO8601DateTransform.swift */,
+				2EB167C21D1AE10500152E08 /* NSDecimalNumberTransform.swift */,
+				2EB167C31D1AE10500152E08 /* TransformOf.swift */,
+				2EB167C41D1AE10500152E08 /* TransformType.swift */,
+				2EB167C51D1AE10500152E08 /* URLTransform.swift */,
+			);
+			path = Transforms;
 			sourceTree = "<group>";
 		};
 		2EFD30B51D19CCE400B22200 /* Binder */ = {
@@ -229,12 +298,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2SP6H22NCZ;
 						DevelopmentTeamName = "Greyson Wright";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					2E6C9E791D18516400E251D4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2SP6H22NCZ;
 						DevelopmentTeamName = "Greyson Wright";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2E6C9E651D18516400E251D4;
 					};
@@ -242,6 +313,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2SP6H22NCZ;
 						DevelopmentTeamName = "Greyson Wright";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2E6C9E651D18516400E251D4;
 					};
@@ -272,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB167CC1D1AE10500152E08 /* Info.plist in Resources */,
 				2E6C9E741D18516400E251D4 /* LaunchScreen.storyboard in Resources */,
 				2E6C9E711D18516400E251D4 /* Assets.xcassets in Resources */,
 				2E6C9E6F1D18516400E251D4 /* Main.storyboard in Resources */,
@@ -299,14 +372,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB167CD1D1AE10500152E08 /* CustomDateFormatTransform.swift in Sources */,
+				2EB167CF1D1AE10500152E08 /* DateTransform.swift in Sources */,
+				2EB167D11D1AE10500152E08 /* ISO8601DateTransform.swift in Sources */,
+				2EB167C71D1AE10500152E08 /* Map.swift in Sources */,
 				2EFD30B41D19CCD800B22200 /* BinderWebService.swift in Sources */,
 				2E6C9E6C1D18516400E251D4 /* ViewController.swift in Sources */,
+				2EB167C61D1AE10500152E08 /* FromJSON.swift in Sources */,
+				2EB167D51D1AE10500152E08 /* URLTransform.swift in Sources */,
+				2EB167CE1D1AE10500152E08 /* DateFormatterTransform.swift in Sources */,
+				2EB167CB1D1AE10500152E08 /* ToJSON.swift in Sources */,
+				2EB167C91D1AE10500152E08 /* Mapper.swift in Sources */,
 				2E6C9E6A1D18516400E251D4 /* AppDelegate.swift in Sources */,
 				2EFD30BA1D19CD3A00B22200 /* DataSingleton.swift in Sources */,
+				2EB167D31D1AE10500152E08 /* TransformOf.swift in Sources */,
 				2E6C9E9B1D1853D900E251D4 /* URLSession+Request.swift in Sources */,
+				2EB167D41D1AE10500152E08 /* TransformType.swift in Sources */,
+				2EB1678F1D1AD3C500152E08 /* Test.swift in Sources */,
+				2EB167D21D1AE10500152E08 /* NSDecimalNumberTransform.swift in Sources */,
+				2EB167CA1D1AE10500152E08 /* Operators.swift in Sources */,
+				2EB167D71D1AEB0C00152E08 /* Data+ObjectMapper.swift in Sources */,
+				2EB167C81D1AE10500152E08 /* Mappable.swift in Sources */,
+				2EB167D01D1AE10500152E08 /* EnumTransform.swift in Sources */,
 				2EFD30BB1D19CD3A00B22200 /* TestData.swift in Sources */,
 				2EFD30B91D19CD3A00B22200 /* DataInterface.swift in Sources */,
-				2EFD30BD1D19D99C00B22200 /* ObjectMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebserviceExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greysonwright.WebserviceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -468,7 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebserviceExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greysonwright.WebserviceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

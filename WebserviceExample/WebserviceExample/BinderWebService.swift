@@ -38,4 +38,18 @@ class BinderWebService: DataInterface {
 			print(error)
 		}
 	}
+	
+	func getHiveWords(response: (Data?) -> Void) {
+		let address = "\(binderWebServiceBaseAddress)/api/Request/HiveWords"
+		
+		//Make Request
+		let headers = ["AccessToken" : "38e6f015-66fa-4965-a078-03a1be41e978"]
+		URLSession.request(with: address, httpMethod: .get, headers: headers, requestBody: nil, response: { (responseData: Data?, statusCode: StatusCode) in
+			if responseData != nil {
+				response(responseData)
+			}
+		}) { (error: NSError) in
+			print(error)
+		}
+	}
 }

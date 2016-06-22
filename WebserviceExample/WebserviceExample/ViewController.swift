@@ -24,11 +24,23 @@ class ViewController: UIViewController {
 //		}) { (error: NSError) in
 //			print(error)
 //		}
-		let dataString = "{\"score\": 9999999999999999,\"hits\": 2,\"misses\": 3}"
-		let data = dataString.data(using: String.Encoding.utf8)
-		DataSingleton.sharedInstance.submitHiveWords(with: data!) { (responseData: Data?) in
-			print(String(data: responseData!, encoding: String.Encoding.utf8))
+//		let dataString = "{\"score\": 9999999,\"hits\": 2,\"misses\": 3}"
+//		let test = Mapper<Test>().map(dataString)
+		
+		
+		DataSingleton.sharedInstance.getHiveWords { (data: Data?) in
+//			let dataString = String(data: data!, encoding: String.Encoding.utf8)
+//			let test = Mapper<Test>().map(dataString)
+			let test = data!.toObject(object: Test().self) as! Test
+			print(test.date)
+			print(test.hits)
+			print(test.score)
+			print(test.misses)
 		}
+		//		let data = dataString.data(using: String.Encoding.utf8)
+//		DataSingleton.sharedInstance.submitHiveWords(with: data!) { (responseData: Data?) in
+//			print(String(data: responseData!, encoding: String.Encoding.utf8))
+//		}
 	}
 
 	override func didReceiveMemoryWarning() {

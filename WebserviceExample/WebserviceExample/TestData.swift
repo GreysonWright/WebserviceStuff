@@ -44,4 +44,8 @@ class TestData: NSObject, DataInterface {
 	func submitHiveWords(with data: Data, response: (Data?) -> Void) {
 		
 	}
+	
+	func getHiveWords(response: (Data?) -> Void) {
+		
+	}
 }

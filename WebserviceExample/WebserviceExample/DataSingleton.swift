@@ -30,9 +30,9 @@
 import Foundation
 
 enum DataSources {
-    case TestData
-    case WebService
-    case None
+    case testData
+    case webService
+    case none
 }
 
 
@@ -42,31 +42,35 @@ class DataSingleton {
     static let sharedInstance = DataSingleton()
     
     //Variables
-    private var dataSourceType: DataSources = .WebService
+    private var dataSourceType: DataSources = .webService
     private var dataSource: DataInterface?
     
     //Init and Init Helpers
     private init() {
-        dataSource = dataSourceForType(source: self.dataSourceType)
+        dataSource = dataSourceForType(self.dataSourceType)
     }
     
-    func dataSourceForType(source: DataSources) -> DataInterface? {
+    func dataSourceForType(_ source: DataSources) -> DataInterface? {
         switch source {
-        case .TestData:
+        case .testData:
             return TestData.sharedInstance
-        case .WebService:
+        case .webService:
             return BinderWebService.sharedInstance
         default:
             return nil
         }
     }
     
-    func setNewDataSource(source: DataSources) {
+    func setNewDataSource(_ source: DataSources) {
         dataSourceType = source
-        dataSource = dataSourceForType(source: source)
+        dataSource = dataSourceForType(source)
     }
 	
 	func submitHiveWords(with data: Data, response: (Data?) -> Swift.Void) {
 		return dataSource!.submitHiveWords(with: data, response: response)
+	}
+	
+	func getHiveWords(response: (Data?) -> Swift.Void) {
+		return dataSource!.getHiveWords(response: response)
 	}
 }
