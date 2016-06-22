@@ -9,12 +9,17 @@
 import UIKit
 
 extension Data {
-	func toObject<T: Mappable>(object: T) -> Mappable? {
+//	func toObject<T: Mappable>(object: T) -> Mappable? {
+//		let dataString = String(data: self, encoding: String.Encoding.utf8)
+//		guard let test = Mapper<T>().map(dataString) else {
+//			print("Could not map object")
+//			return nil
+//		}
+//		return test
+//	}
+	
+	func toObject<T: Mappable>(object: inout T) {
 		let dataString = String(data: self, encoding: String.Encoding.utf8)
-		guard let test = Mapper<T>().map(dataString) else {
-			print("Could not map object")
-			return nil
-		}
-		return test
+		object = Mapper<T>().map(dataString)!
 	}
 }

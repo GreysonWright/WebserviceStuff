@@ -31,11 +31,12 @@ class ViewController: UIViewController {
 		DataSingleton.sharedInstance.getHiveWords { (data: Data?) in
 //			let dataString = String(data: data!, encoding: String.Encoding.utf8)
 //			let test = Mapper<Test>().map(dataString)
-			let test = data!.toObject(object: Test().self) as! Test
-			print(test.date)
-			print(test.hits)
-			print(test.score)
-			print(test.misses)
+			var test: Test = Test()
+			data!.toObject(object: &test)
+			print(test.date!)
+			print(test.hits!)
+			print(test.score!)
+			print(test.misses!)
 		}
 		//		let data = dataString.data(using: String.Encoding.utf8)
 //		DataSingleton.sharedInstance.submitHiveWords(with: data!) { (responseData: Data?) in
