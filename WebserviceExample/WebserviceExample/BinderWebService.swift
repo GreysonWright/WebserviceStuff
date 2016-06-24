@@ -9,7 +9,7 @@
 import UIKit
 
 class BinderWebService: DataInterface {
-	var binderWebServiceBaseAddress : String = "https://mobileweb.caps.ua.edu/BeePositive"
+	var binderWebServiceBaseAddress : String = "https://mobileweb.caps.ua.edu"
 	var accessToken: String? = "38e6f015-66fa-4965-a078-03a1be41e978"
 	
 	// MARK: Singleton Access
@@ -26,7 +26,7 @@ class BinderWebService: DataInterface {
 	
 	// MARK: Binder Webservice Methods
 	func getHiveWords(response: (Test?) -> Void) {
-		let address = "\(binderWebServiceBaseAddress)/api/Request/HiveWords"
+		let address = "\(binderWebServiceBaseAddress)/BeePositive/api/Request/HiveWords"
 		
 		//Make Request
 		URLSession.shared().request(with: address, httpMethod: .get, headers: binderHeaders(), requestBody: nil, response: { (responseData: Data?, statusCode: StatusCode) in
@@ -43,7 +43,7 @@ class BinderWebService: DataInterface {
 	}
 	
 	func getArrests(response: ([OtherTest]?) -> Void) {
-		let address = "https://mobileweb.caps.ua.edu/TCSOPublic/api/Arrests/getRecentArrests"
+		let address = "\(binderWebServiceBaseAddress)/TCSOPublic/api/Arrests/getRecentArrests"
 		
 		//Make Request
 		URLSession.shared().request(with: address, httpMethod: .get, headers: binderHeaders(), requestBody: nil, response: { (responseData: Data?, statusCode: StatusCode) in

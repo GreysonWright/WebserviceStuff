@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -26,8 +26,13 @@ class ViewController: UIViewController {
 				print(stuff.FirstName)
 			}
 		}
+		
+		let string = "[{\"Person\": {\"name\": \"Dani\",\"age\": 24,\"choices\": [\"sample string 1\",\"sample string 2\",\"sample string 3\"]}}]"
+		let stringData = string.data(using: String.Encoding.utf8)
+		let person = Person(data: stringData!)
+		print("name -- \(person.name!) age -- \(person.age!) choices -- \(person.choices!)")
 	}
-
+	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.

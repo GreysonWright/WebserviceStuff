@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5E67FD1D1DE201001EA2D0 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E67FC1D1DE201001EA2D0 /* Mapping.swift */; };
+		2E5E67FF1D1DE211001EA2D0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E67FE1D1DE211001EA2D0 /* Person.swift */; };
 		2E6C9E6A1D18516400E251D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C9E691D18516400E251D4 /* AppDelegate.swift */; };
 		2E6C9E6C1D18516400E251D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C9E6B1D18516400E251D4 /* ViewController.swift */; };
 		2E6C9E6F1D18516400E251D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6C9E6D1D18516400E251D4 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E5E67FC1D1DE201001EA2D0 /* Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
+		2E5E67FE1D1DE211001EA2D0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		2E6C9E661D18516400E251D4 /* WebserviceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebserviceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6C9E691D18516400E251D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6C9E6B1D18516400E251D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				2E6C9E691D18516400E251D4 /* AppDelegate.swift */,
 				2EB1678E1D1AD3C500152E08 /* Test.swift */,
 				2EB167DC1D1B1ED100152E08 /* OtherTest.swift */,
+				2E5E67FC1D1DE201001EA2D0 /* Mapping.swift */,
+				2E5E67FE1D1DE211001EA2D0 /* Person.swift */,
 				2EFD30B51D19CCE400B22200 /* Binder */,
 				2E6C9E6B1D18516400E251D4 /* ViewController.swift */,
 				2E6C9E6D1D18516400E251D4 /* Main.storyboard */,
@@ -391,6 +397,7 @@
 				2EB167CF1D1AE10500152E08 /* DateTransform.swift in Sources */,
 				2EB167D11D1AE10500152E08 /* ISO8601DateTransform.swift in Sources */,
 				2EB167C71D1AE10500152E08 /* Map.swift in Sources */,
+				2E5E67FD1D1DE201001EA2D0 /* Mapping.swift in Sources */,
 				2EB167DD1D1B1ED100152E08 /* OtherTest.swift in Sources */,
 				2EFD30B41D19CCD800B22200 /* BinderWebService.swift in Sources */,
 				2E6C9E6C1D18516400E251D4 /* ViewController.swift in Sources */,
@@ -401,6 +408,7 @@
 				2EB167C91D1AE10500152E08 /* Mapper.swift in Sources */,
 				2E6C9E6A1D18516400E251D4 /* AppDelegate.swift in Sources */,
 				2EFD30BA1D19CD3A00B22200 /* DataSingleton.swift in Sources */,
+				2E5E67FF1D1DE211001EA2D0 /* Person.swift in Sources */,
 				2EB167D31D1AE10500152E08 /* TransformOf.swift in Sources */,
 				2E6C9E9B1D1853D900E251D4 /* URLSession+Request.swift in Sources */,
 				2EB167D41D1AE10500152E08 /* TransformType.swift in Sources */,
