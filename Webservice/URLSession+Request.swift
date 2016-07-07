@@ -61,13 +61,15 @@ enum HTTPMethod: String {
 }
 
 extension URLSession {
-	func buildError(with statusCode: StatusCode) -> NSError {
+	private func buildError(with statusCode: StatusCode) -> NSError {
 		let error = NSError(domain: "\(statusCode)", code: statusCode.rawValue, userInfo: nil)
 		return error
 	}
 	
-	func request(with url: String, httpMethod: HTTPMethod, headers: [String : String]?, requestBody: Data?, response: (Data?, StatusCode) -> Swift.Void, error: (NSError) -> Swift.Void) {
-		var urlRequest = URLRequest(url: URL(string:url)!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10.0)
+	private func buildURLRequest(with urlString: String, httpMethod: HTTPMethod, headers: [String : String]?, requestBody: Data?) -> URLRequest {
+		let url = URL(string:urlString)!
+		var urlRequest = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10.0)
+		
 		urlRequest.httpMethod = httpMethod.rawValue
 		if requestBody != nil {
 			urlRequest.httpBody = requestBody!
@@ -78,6 +80,12 @@ extension URLSession {
 				urlRequest.setValue(headerPair.value, forHTTPHeaderField: headerPair.key)
 			}
 		}
+		
+		return urlRequest
+	}
+	
+	func request(with url: String, httpMethod: HTTPMethod, headers: [String : String]?, requestBody: Data?, response: (Data?, StatusCode) -> Swift.Void, error: (NSError) -> Swift.Void) {
+		let urlRequest = buildURLRequest(with: url, httpMethod: httpMethod, headers: headers, requestBody: requestBody)
 		
 		let task = dataTask(with: urlRequest) { (data: Data?, urlResponse: URLResponse?, requestError: NSError?) in
 			guard let httpResponse = urlResponse as? HTTPURLResponse else {

@@ -8,11 +8,6 @@
 
 import UIKit
 
-enum BinderError: ErrorProtocol {
-	case CouldNotMapObject
-	case NoResponseData
-}
-
 extension Data {
 	func fromJSON<T: Mappable>(to object: T) -> T? {
 		let dataString = String(data: self, encoding: String.Encoding.utf8)

@@ -8,17 +8,17 @@
 
 import UIKit
 
-class Person: Mapping {
+class Person: JSONMap {
 	var name: String?
 	var age: Int?
-	var choices: [String]?
+	var friend: Person?
 	
-	init(data: Data) {
-		super.init()
+	override init(data: Data) {
+		super.init(data: data)
 		
-		self.data = data
 		name = map(object: "name")
 		age = map(object: "age")
-		choices = map(array: "choices")
+//		friend = map(object: "friend")
+//		choices = map(array: "choices")
 	}
 }
